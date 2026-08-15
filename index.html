@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product Store</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background:#f3f3;
+            text-align: center;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .cartParagraph{
+            margin-top: 1rem;
+        }
+        #products{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            gap: 15px;
+            margin-top: 5rem;
+        }
+        .product{
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.1);
+        }
+        .product:hover{
+              transform: scale(1.01);
+             transition:  all .5s ease-in-out;
+        }
+        .product img{
+            width: 120px;
+            height:150px;
+            object-fit: contain;
+        }
+        .product button{
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Simple product Store</h2>
+    <p class="cartParagraph"><span id="cartCount"></span></p>
+    <!-- <p id="message"></p> -->
+    <div id="products"></div>
+    <script type="module" src="./JS/main.js"></script>
+</body>
+</html>
